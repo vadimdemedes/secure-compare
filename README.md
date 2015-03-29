@@ -1,16 +1,35 @@
-cryptiles
-=========
+# secure-compare
 
-General purpose crypto utilities
+Constant-time comparison algorithm to prevent timing attacks for Node.js.
+Copied from [cryptiles](https://github.com/hapijs/cryptiles) by [C J Silverio](https://github.com/ceejbot).
 
-[![Build Status](https://secure.travis-ci.org/hapijs/cryptiles.png)](http://travis-ci.org/hapijs/cryptiles)
 
-Lead Maintainer - [C J Silverio](https://github.com/ceejbot)
+### Installation
 
-## Methods
+```
+$ npm install secure-compare --save
+```
 
-### `randomString(<Number> size)`
-Returns a cryptographically strong pseudo-random data string. Takes a size argument for the length of the string.
 
-### `fixedTimeComparison(<String> a, <String> b)`
-Compare two strings using fixed time algorithm (to prevent time-based analysis of MAC digest match). Returns `true` if the strings match, `false` if they differ.
+### Usage
+
+```javascript
+var compare = require('secure-compare');
+
+compare('hello world', 'hello world').should.equal(true);
+compare('你好世界', '你好世界').should.equal(true);
+
+compare('hello', 'not hello').should.equal(false);
+```
+
+
+### Tests
+
+```
+$ npm test
+```
+
+
+### License
+
+secure-compare is released under the MIT license.
