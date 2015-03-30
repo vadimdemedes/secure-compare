@@ -1,6 +1,6 @@
 {
   "name": "secure-compare",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Securely compare two strings, copied from cryptiles",
   "main": "index.js",
   "scripts": {
