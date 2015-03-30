@@ -18,7 +18,7 @@ function compare (a, b) {
   }
   
   for (var i = 0, il = a.length; i < il; ++i) {
-    mismatch |= (a.charCodeAt(i) ^ a.charCodeAt(i));
+    mismatch |= (a.charCodeAt(i) ^ b.charCodeAt(i));
   }
   
   return mismatch === 0;
