@@ -3,6 +3,7 @@
   "version": "3.0.1",
   "description": "Securely compare two strings, copied from cryptiles",
   "main": "index.js",
+  "typings": "index.d.ts",
   "scripts": {
     "test": "./node_modules/.bin/mocha test"
   },
