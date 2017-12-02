@@ -3,6 +3,8 @@
 Constant-time comparison algorithm to prevent timing attacks for Node.js.
 Copied from [cryptiles](https://github.com/hapijs/cryptiles) by [C J Silverio](https://github.com/ceejbot).
 
+*If you're targeting Node.js v6.6.0+, use [crypto.timingSafeEqual](https://nodejs.org/api/crypto.html#crypto_crypto_timingsafeequal_a_b) instead.*
+
 
 ### Installation
 
